@@ -18,13 +18,13 @@ axios.get('https://jsonplaceholder.typicode.com/users/1/todos').then (res =>{
 }
 
     return (
-        <div>
+        <div style={{backgroundColor:'#000'}}>
 
 <button type="button" class="btn btn-primary" onClick={onClick}> Click me for data</button>
             {
                 name.map((name,i) => (
                     <ul>
-                        <li className="list-group-item list-group-item-dark" key = {i}> {name} </li>
+                        <li className = "list-group-item text-white" style={{backgroundColor:' #313131'}} key = {i}> {name} </li>
                         </ul>
                 ))
             }
